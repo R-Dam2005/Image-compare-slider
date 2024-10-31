@@ -13,6 +13,7 @@ The slider allows users to compare two images interactively by sliding a button 
 
 
 **Example of the slider:**
+
 ![image](https://github.com/user-attachments/assets/f81d96f2-f2d0-4617-961e-edac1af6b97f)
 
 ![image](https://github.com/user-attachments/assets/158d91fa-facd-463f-8740-36ebd0a0cd3c)
