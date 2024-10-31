@@ -1,6 +1,6 @@
 .image-compare {
   .c-compare {
-    --thumb-bgc: var(--bs-white);
+    --thumb-bgc: #fff;
     --compareValue: var(--value);
     margin: 1rem 0;
     position: relative;
@@ -72,8 +72,8 @@
 
   .slider-button {
     position: absolute;
-    border: 8px solid var(--bs-white);
-    background-color: var(--bs-olive-green);
+    border: 8px solid #fff;
+    background-color: #000;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -84,7 +84,7 @@
     width: 2rem;
     height: 2rem;
     @media (min-width: 992px) {
-      border: 12px solid var(--bs-white);
+      border: 12px solid #fff;
       width: 3rem;
       height: 3rem;
     }
