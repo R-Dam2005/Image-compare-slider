@@ -1,4 +1,4 @@
-**Image Comparison Slider**
+# **Image Comparison Slider**
 This repository contains the full code for an interactive image comparison slider. The project is structured with:
 
 HTML: The foundational markup for the slider layout and structure.
