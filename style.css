@@ -1,0 +1,100 @@
+.image-compare .c-compare {
+  --thumb-bgc: #fff;
+  --compareValue: var(--value);
+  margin: 1rem 0;
+  position: relative;
+}
+
+.image-compare .c-compare::after {
+  content: "";
+  display: block;
+  padding-bottom: calc((9 / 16) * 100%);
+}
+
+.image-compare .c-compare__left, .image-compare .c-compare__right {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.image-compare .c-compare__left {
+  clip-path: polygon(0% 0%, var(--compareValue) 0%, var(--compareValue) 100%, 0% 100%);
+}
+
+.image-compare .c-compare__right {
+  clip-path: polygon(100% 0%, var(--compareValue) 0%, var(--compareValue) 100%, 100% 100%);
+}
+
+.c-compare__range {
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: inherit;
+  height: 100%;
+  margin: 0;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.c-compare__range::-moz-range-thumb {
+  background-color: var(--thumb-bgc);
+  cursor: ew-resize;
+  height: 100%;
+  width: 4px;
+}
+
+.c-compare__range::-webkit-slider-thumb {
+  background-color: var(--thumb-bgc);
+  cursor: ew-resize;
+  height: 100%;
+  width: 4px;
+}
+
+.c-compare__range::-moz-range-track {
+  background: transparent;
+  background-size: 100%;
+  box-sizing: border-box;
+}
+
+.c-compare__range::-webkit-slider-runnable-track {
+  background: transparent;
+  background-size: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.c-compare__range,
+.c-compare__range::-webkit-slider-runnable-track,
+.c-compare__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.slider-button {
+  position: absolute;
+  border: 8px solid #fff;
+  background-color: #000;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  top: 50%;
+  left: var(--compareValue);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 2rem;
+  height: 2rem;
+}
+
+@media (min-width: 992px) {
+  .slider-button {
+    border: 12px solid #fff;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.slider-button:hover {
+  cursor: ew-resize;
+}
