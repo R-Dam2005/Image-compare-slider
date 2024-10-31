@@ -83,7 +83,7 @@
     pointer-events: none;
     width: 2rem;
     height: 2rem;
-    @include media-breakpoint-up(lg) {
+    @media (min-width: 992px) {
       border: 12px solid var(--bs-white);
       width: 3rem;
       height: 3rem;
